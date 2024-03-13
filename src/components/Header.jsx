@@ -26,9 +26,15 @@ const Header = () => {
           <NavLink to="/" className={"hover:underline"}>
             Home
           </NavLink>
-          <NavLink to="/">About us</NavLink>
-          <NavLink to="/">Furniture</NavLink>
-          <NavLink to="/">Contact us</NavLink>
+          <NavLink to="/" className={"hover:underline"}>
+            About us
+          </NavLink>
+          <NavLink to="/" className={"hover:underline"}>
+            Furniture
+          </NavLink>
+          <NavLink to="/" className={"hover:underline"}>
+            Contact us
+          </NavLink>
           {/* Pop-up für Login-Fenster: */}
           <button
             onClick={toggleLogin}
