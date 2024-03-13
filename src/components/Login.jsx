@@ -1,4 +1,4 @@
-import "./Login.css";
+import "./Popup.css";
 
 // props: toggle
 const Login = (props) => {
@@ -34,7 +34,10 @@ const Login = (props) => {
               value={"Continue"}
             />
             <p>
-              Forgot password? <a href="#">Reset</a>
+              Forgot password?{" "}
+              <a href="#" className="hover:text-[#D9D9D9]">
+                Reset
+              </a>
             </p>{" "}
           </div>
         </form>

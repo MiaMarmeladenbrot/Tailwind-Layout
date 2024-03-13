@@ -1,17 +1,25 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Login from "./Login";
+import Signup from "./Signup";
 
 const Header = () => {
-  const [seen, setSeen] = useState(false);
+  // * Login-Pop-Up:
+  const [login, setLogin] = useState(false);
 
-  const togglePop = () => {
-    setSeen(!seen);
-    // console.log("func läuft");
+  const toggleLogin = () => {
+    setLogin(!login);
+  };
+
+  // * Sign-up-Pop-up:
+  const [signup, setSignup] = useState(false);
+
+  const toggleSignup = () => {
+    setSignup(!signup);
   };
 
   return (
-    <header className="mb-80 pt-5">
+    <header className="mb-72 pt-5">
       <nav className="flex justify-between items-center">
         <h2 className="text-lg uppercase">Home_H</h2>
         <nav className="flex gap-6 items-center">
@@ -21,19 +29,23 @@ const Header = () => {
           <NavLink to="/">About us</NavLink>
           <NavLink to="/">Furniture</NavLink>
           <NavLink to="/">Contact us</NavLink>
-
           {/* Pop-up für Login-Fenster: */}
           <button
-            onClick={togglePop}
+            onClick={toggleLogin}
             className={"py-1 px-2 border-2 rounded-lg"}
           >
             Log in
           </button>
-          {seen ? <Login toggle={togglePop} /> : null}
+          {login ? <Login toggle={toggleLogin} /> : null}
 
-          <button className={" py-1.5 px-2 bg-[#D4B170] rounded-lg"}>
+          {/* Pop-up für Signup-Fenster: */}
+          <button
+            onClick={toggleSignup}
+            className={" py-1.5 px-2 bg-[#D4B170] rounded-lg"}
+          >
             Sign up
           </button>
+          {signup ? <Signup toggle={toggleSignup} /> : null}
         </nav>
       </nav>
     </header>

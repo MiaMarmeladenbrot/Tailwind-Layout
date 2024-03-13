@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section className="bg-[#A4A4A3] text-white px-24 pt-12 pb-24">
       <div className="flex justify-between gap-5 ">
-        <div className="relative">
+        <div>
           <h2 className="text-5xl mb-6">Drop a message</h2>
           <form className="flex flex-col gap-2 min-w-96 ">
             <label htmlFor="name">Name</label>
@@ -10,7 +10,7 @@ const Contact = () => {
               type="text"
               id="name"
               placeholder="Input your name"
-              className="bg-[#E7E7E7]  py-1 px-3 rounded-lg placeholder:text-[#CDC8CC]"
+              className="bg-[#E7E7E7] py-1 px-3 rounded-lg placeholder:text-[#CDC8CC]"
             />
 
             <label htmlFor="tel">Mobile no.</label>
@@ -43,7 +43,7 @@ const Contact = () => {
         <img
           src="./img/phone.png"
           alt="old telephone"
-          className="size-3/6 max-w-[500px]"
+          className=" size-3/6 max-w-[500px] h-1/2"
         />
       </div>
     </section>
@@ -51,5 +51,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-// absolute right-0 bottom-0
