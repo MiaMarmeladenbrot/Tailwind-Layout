@@ -1,9 +1,33 @@
-# React + Vite
+# Tailwind Layout
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+by [MiaMarmeladenbrot](https://github.com/MiaMarmeladenbrot)
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Tailwind-Layout
+- Building a website using [Tailwind](https://tailwindcss.com/)
+
+## Screenshots
+
+### Homepage
+
+<img src='./public/img/screenshots/Hero.png' width='700'>
+
+### Login Pop-up
+
+<img src='./public/img/screenshots/login.png' width='700'>
+
+### Sign Pop-up
+
+<img src='./public/img/screenshots/signup.png' width='700'>
+
+### Who We Are
+
+<img src='./public/img/screenshots/whoweare.png' width='700'>
+
+### Who We Are - Hover-Effect
+
+<img src='./public/img/screenshots/whowearehover.png' width='700'>
+
+### Footer
+
+<img src='./public/img/screenshots/footer.png' width='700'>
